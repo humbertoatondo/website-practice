@@ -1,0 +1,85 @@
+.navbar-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    box-shadow: 0px 2px 8px gray;
+}
+
+.navbar-row-layout {
+    background-color: greenyellow;
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 150px auto 400px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "title . buttons"
+}
+
+@media(max-width: 700px) {
+    .navbar-row-layout {
+        grid-template-columns: 150px auto 100px;
+        grid-template-rows: 1fr;
+        grid-template-areas: "title . menu-button";
+    }
+
+    .navbar-buttons-container {
+        display: none;
+    }
+
+    .navbar-button {
+        display: none;
+    }
+
+    .navbar-menu-button {
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        justify-content: right;
+    }
+}
+
+.navbar-title {
+    grid-area: title;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(90, 90, 90);
+}
+
+.navbar-buttons-container {
+    grid-area: buttons;
+    background-color: khaki;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-button {
+    font-size: 16px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: gray;
+    height: fit-content;
+}
+
+.navbar-menu-button {
+    grid-area: menu-button;
+    background-color: hotpink;
+    width: fit-content;
+    align-items: center;
+    justify-content: right;
+}
+
+@media(min-width: 700px) {
+    .navbar-menu-button {
+        display: None;
+    }
+}
+
+
+button:hover {
+    cursor: pointer
+}
