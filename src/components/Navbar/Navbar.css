@@ -1,9 +1,11 @@
 .navbar-container {
     background-color: white;
+    position: relative;
     display: flex;
     justify-content: center;
     height: 75px;
-    box-shadow: 0px 2px 8px gray;
+    box-shadow:  0px 0px 12px rgb(148, 148, 148);
+    z-index: 2;
 }
 
 .navbar-row-layout {
@@ -48,12 +50,6 @@
 .menu-icon {
     width: 35px;
 }
-
-
-button:hover {
-    cursor: pointer;
-}
-
 
 @media (max-width: 500px) {
 

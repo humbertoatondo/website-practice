@@ -1,4 +1,7 @@
 body {
     margin: 0px;
-    background-color: bisque;
+}
+
+button:hover {
+    cursor: pointer;
 }
