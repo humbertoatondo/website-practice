@@ -1,4 +1,5 @@
 import './Navbar.css';
+
 import React from 'react';
 
 class Navbar extends React.Component {
@@ -15,7 +16,13 @@ class Navbar extends React.Component {
                         <button className="navbar-button">Button</button>
                         <button className="navbar-button">Button</button>
                     </div>
-                    <button className="navbar-menu-button">Menu</button>
+                    <button className="navbar-menu-button bx-menu">
+                        <img 
+                            className="menu-icon"
+                            src={require("../../icons/bx-menu.svg")}
+                            alt="Menu Icon"
+                        />
+                    </button>
                 </div>
             </div>
         );

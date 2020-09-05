@@ -7,40 +7,14 @@
 }
 
 .navbar-row-layout {
-    background-color: greenyellow;
     width: 100%;
     max-width: 1000px;
-    display: grid;
-    grid-template-columns: 150px auto 400px;
-    grid-template-rows: 1fr;
-    grid-template-areas: "title . buttons"
-}
-
-@media(max-width: 700px) {
-    .navbar-row-layout {
-        grid-template-columns: 150px auto 100px;
-        grid-template-rows: 1fr;
-        grid-template-areas: "title . menu-button";
-    }
-
-    .navbar-buttons-container {
-        display: none;
-    }
-
-    .navbar-button {
-        display: none;
-    }
-
-    .navbar-menu-button {
-        display: flex;
-        width: fit-content;
-        align-items: center;
-        justify-content: right;
-    }
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar-title {
-    grid-area: title;
+    width: 150px;
     display: flex;
     place-items: center;
     justify-content: center;
@@ -49,11 +23,10 @@
 }
 
 .navbar-buttons-container {
-    grid-area: buttons;
-    background-color: khaki;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 400px;
 }
 
 .navbar-button {
@@ -66,20 +39,30 @@
 }
 
 .navbar-menu-button {
-    grid-area: menu-button;
     background-color: hotpink;
-    width: fit-content;
-    align-items: center;
-    justify-content: right;
+    display: none;
+    border: none;
+    background: none;
 }
 
-@media(min-width: 700px) {
-    .navbar-menu-button {
-        display: None;
-    }
+.menu-icon {
+    width: 35px;
 }
 
 
 button:hover {
-    cursor: pointer
+    cursor: pointer;
+}
+
+
+@media (max-width: 500px) {
+
+    .navbar-buttons-container {
+        display: none !important;
+    }
+
+    .navbar-menu-button {
+        display: flex !important;
+    }
+
 }
