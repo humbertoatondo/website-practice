@@ -8,7 +8,7 @@ class HomeMain extends React.Component {
             <div className="main-container">
                 <div className="central-container">
                     <div className="text-container">
-                        <h1>Our creativity is your success</h1>
+                        <h1 className="home-main-title">Our creativity is your success</h1>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             Fugit, dolorum.

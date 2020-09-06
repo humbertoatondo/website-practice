@@ -29,7 +29,8 @@
 }
 
 .learn-more-button {
-    --button-color: rgb(72, 167, 255);
+    /* --button-color: rgb(72, 167, 255); */
+    --button-color: rgb(98, 211, 205);
     font-size: 16px;
     color: white;
     background-color: var(--button-color);
@@ -40,12 +41,13 @@
     margin-top: 16px;
 }
 
-h1 {
+.home-main-title {
     color: rgb(29, 39, 59);
     font-size: 56px;
     font-weight: 500;
     margin: 0;
 }
+
 
 p {
     color: rgb(100, 100, 100);
